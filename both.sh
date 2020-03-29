@@ -9,7 +9,7 @@ done
 # Convert mov to gif raw
 for file in ~/Documents/scripts/ffmpeg-conversions/01_in/*.mov
 do
-ffmpeg -i "$file" -pix_fmt rgb24 -r 10 "${file%.*}".gif
+ffmpeg -i "$file" -pix_fmt rgb8 -r 10 "${file%.*}".gif
 done
 
 # optimize the gif with gifsicle
